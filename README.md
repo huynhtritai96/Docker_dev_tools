@@ -170,38 +170,18 @@ docker images
 
 Run a container interactively:
 ```bash
-docker run -it ubuntu
-```
-Exit the container with:
-```bash
-exit
+docker run -it ubuntu # ???
+docker exec -it container_name bash # go inside the container
+exit # Exit the container
 ```
 
 ### Managing Docker Containers
-
-List active containers:
 ```bash
-docker ps
-```
-
-List all containers:
-```bash
-docker ps -a
-```
-
-Start a stopped container:
-```bash
-docker start container_id
-```
-
-Stop a running container:
-```bash
-docker stop container_id
-```
-
-Remove a container:
-```bash
-docker rm container_id
+docker ps # List active containers
+docker ps -a # List all containers
+docker start container_id # Start a stopped container
+docker stop container_id # Stop a running container
+docker rm container_id # Remove a container
 ```
 
 ### Committing Changes to a Docker Image
