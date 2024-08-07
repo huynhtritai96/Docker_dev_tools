@@ -80,7 +80,7 @@ TriggeredBy: ● docker.socket
      CGroup: /system.slice/docker.service
              └─24321 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
 ```
-### Step-by-Step: Executing Docker Command Without Sudo (Optional)
+### Step-by-Step: Executing Docker Command Without Sudo by using your current username (Optional)
 
 #### 1. **Understanding Default Permissions**
 By default, the `docker` command can only be run by the root user or a user in the `docker` group. Attempting to run it otherwise results in:
